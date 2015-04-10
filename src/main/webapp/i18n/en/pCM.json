@@ -1,0 +1,18 @@
+{
+    "jhipsterApp": {
+        "pCM" : {
+            "home": {
+                "title": "PCMs",
+                "createLabel": "Create a new PCM",
+                "createOrEditLabel": "Create or edit a PCM"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete PCM {{ id }}?"
+            },
+            "detail": {
+                "title": "PCM"
+            },
+            "name": "Name"
+        }
+    }
+}

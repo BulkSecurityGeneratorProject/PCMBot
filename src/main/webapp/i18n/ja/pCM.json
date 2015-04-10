@@ -1,0 +1,18 @@
+{
+    "jhipsterApp": {
+        "pCM" : {
+            "home": {
+                "title": "PCMs",
+                "createLabel": "PCM を追加",
+                "createOrEditLabel": "PCMを追加または編集"
+            },
+            "delete": {
+                "question": "PCM {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "PCM"
+            },
+            "name": "Name"
+        }
+    }
+}
