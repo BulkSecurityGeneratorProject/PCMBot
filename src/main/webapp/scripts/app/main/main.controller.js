@@ -1,11 +1,16 @@
 'use strict';
 
 angular.module('jhipsterApp')
-    .controller('MainController', function ($scope, Principal) {
+    .controller('MainController', function ($scope, Principal, $http) {
         Principal.identity().then(function(account) {
             $scope.account = account;
             $scope.isAuthenticated = Principal.isAuthenticated;
         });
+
+        //$http.get("assets/data/monfichier").success(function (data) {
+        //    $scope.myData = data.myData;
+        //    $scope.overviews = data.overviews;
+        //});
 
         $scope.myData = [
             {
@@ -27,6 +32,15 @@ angular.module('jhipsterApp')
                 "employed": false
             }
         ];
+
+        $scope.overviews = [
+            {
+                text: "toto"
+            },
+            {
+                text: "tata"
+            }
+        ]
 
         $scope.gridOptions = {
             data: 'myData',
@@ -53,6 +67,7 @@ angular.module('jhipsterApp')
 
         $scope.fnOne = function(row, col) {
             alert(col.displayName + ": " + row.entity[col.field]);
+
         }
 
 
